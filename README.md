@@ -7,6 +7,14 @@ npm run deploy
 
 ------------
 
+(FOR 4.2)
+QUESTION: "Why use serverless?":
+ANSWER: Serverless architecture is an great choice for small apps with few viewers due to cost-efficiency, simplified development, and automatic scaling, allowing developers to focus on app functionality without managing server infrastructure. 
+
+It offers streamlined deployment, resource optimization, and a low financial barrier, making it an attractive option for startups or small-scale applications.
+
+
+------------
 
 KEY FEATURE 1: Filter Events By City
 USER STORY: 
