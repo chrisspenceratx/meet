@@ -1,10 +1,12 @@
-HOW TO RUN LOCALLY:
+HOW TO RUN LOCALLY (view on localhost:3000):
 cd meet
 npm run start
 
 HOW TO DEPLOY TO GH PAGES:
 npm run deploy
 
+LIVE SITE:
+our site is live at https://chrisspenceratx.github.io/meet/
 ------------
 
 (FOR 4.2)
