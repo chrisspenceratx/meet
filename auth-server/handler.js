@@ -36,3 +36,7 @@ module.exports.getAuthURL = async () => {
     }),
   };
 };
+
+module.exports.getAccessToken = async (event) => {
+  //code will go in here
+}
