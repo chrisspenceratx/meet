@@ -1,5 +1,4 @@
-
-
+// tried typing 'use strict'; and when I save it that line goes away?//
 
 const { google } = require("googleapis");
 const calendar = google.calendar("v3");
