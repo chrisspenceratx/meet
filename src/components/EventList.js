@@ -1,14 +1,9 @@
-// src/App.js
+// src/components/EventList.js
 
-import EventList from './components/EventList';
-import './App.css';
-
-const App = () => {
+const EventList = () => {
   return (
-    <div className="App">
-      <EventList />
-    </div>
+    <div id="event-list"></div>
   );
 }
 
-export default App;
+export default EventList;
