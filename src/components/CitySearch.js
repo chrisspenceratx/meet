@@ -1,5 +1,3 @@
-// src/components/CitySearch.js
-
 import { useState } from "react";
 
 const CitySearch = () => {
@@ -9,9 +7,12 @@ const CitySearch = () => {
       <input
         type="text"
         className="city"
+                placeholder="Search for a city"
+        onFocus={() => setShowSuggestions(true)}
       />
+      {showSuggestions ? <ul className="suggestions"></ul> : null}
     </div>
   )
 }
 
-export default CitySearch;
+export default CitySearch;   
