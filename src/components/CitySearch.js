@@ -2,6 +2,8 @@ import { useState } from "react";
 
 const CitySearch = () => {
   const [showSuggestions, setShowSuggestions] = useState(false);
+  const [query, setQuery] = useState("");
+  const [suggestions, setSuggestions] = useState([]);
   return (
     <div id="city-search">
       <input
