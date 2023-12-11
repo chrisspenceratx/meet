@@ -14,6 +14,10 @@ describe('<EventList /> component', () => {
     expect(EventListComponent.queryByRole('list')).toBeInTheDocument();
   });
 
+  describe('EventList /> integration', () => {
+
+  }); 
+
   test('renders correct number of events', async () => {
     const allEvents = await getEvents();
     EventListComponent.rerender(<EventList events={allEvents} />);
