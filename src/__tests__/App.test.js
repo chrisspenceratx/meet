@@ -42,5 +42,9 @@ describe('<App /> component', () => {
     expect(allRenderedEventItems.length).toBe(berlinEvents.length);
   });
 
+  allRenderedEventItems.forEach(event => {
+    expect(event.textContent).toContain("Berlin, Germany");
+  });
+
   
 });
