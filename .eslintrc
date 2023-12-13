@@ -1,0 +1,5 @@
+{
+    "rules": {
+        "testing-library/forbidden-usage": "off"
+    }
+}
