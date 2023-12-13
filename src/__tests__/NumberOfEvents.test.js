@@ -6,26 +6,27 @@ import NumberOfEvents from '../components/NumberOfEvents';
 
 describe('<NumberOfEvents /> component', () => {
   let NumberOfEventsComponent;
-
   beforeEach(() => {
-    NumberOfEventsComponent = render(
-      <NumberOfEvents setCurrentNOE={() => {}} />
-    );
+    NumberOfEventsComponent = render(<NumberOfEvents />);
   });
 
-  test('textbox exists on the page', () => {
-    const textbox = NumberOfEventsComponent.queryByRole('textbox');
-    expect(textbox).toBeInTheDocument();
+  test('renders number of events text input', () => {
+    const numberTextBox = NumberOfEventsComponent.queryByRole('textbox');
+    expect(numberTextBox).toBeInTheDocument();
+    expect(numberTextBox).toHaveClass('number-of-events-input');
   });
 
-  test('when no number is entered, 32 events shown by default', () => {
-    const textbox = NumberOfEventsComponent.queryByRole('textbox');
-    expect(textbox).toHaveValue('32');
+  test('default number is 32', async () => {
+    const numberTextBox = NumberOfEventsComponent.queryByRole('textbox');
+    expect(numberTextBox).toHaveValue("32");
   });
 
-  test('updates number of events when user types', async () => {
-    const textbox = NumberOfEventsComponent.queryByRole('textbox');
-    await userEvent.type(textbox, '{backspace}{backspace}10');
-    expect(textbox).toHaveValue('10');
+  test('number of events text box value changes when the user types in it', async () => {
+    const user = userEvent.setup();
+    const numberTextBox = NumberOfEventsComponent.queryByRole('textbox');
+    await user.type(numberTextBox, "123")
+
+    // 32 (the default value already written) + 123
+    expect(numberTextBox).toHaveValue("32123");
   });
 });
