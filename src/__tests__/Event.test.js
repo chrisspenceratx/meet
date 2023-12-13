@@ -1,3 +1,8 @@
+/* eslint-disable testing-library/no-node-access */
+/* eslint-disable testing-library/prefer-presence-queries */
+/* eslint-disable testing-library/prefer-screen-queries */
+/* eslint-disable testing-library/no-render-in-setup */
+
 // src/__tests__/Event.test.js
 
 import { render } from '@testing-library/react';
@@ -26,6 +31,7 @@ describe('<Event /> component', () => {
   });
 
   test("by default, event's details section should be hidden", () => {
+    // eslint-disable-next-line testing-library/no-node-access
     expect(EventComponent.container.querySelector('.details')).not.toBeInTheDocument();
   });
 

@@ -1,5 +1,6 @@
 /* eslint-disable testing-library/render-result-naming-convention */
 /* eslint-disable testing-library/no-node-access */
+/* eslint-disable testing-library/no-render-in-setup */
 // src/__tests__/App.test.js
 
 import { render, within } from '@testing-library/react';
