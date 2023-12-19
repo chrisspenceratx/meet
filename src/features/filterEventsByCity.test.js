@@ -5,5 +5,3 @@ const feature = loadFeature('./src/features/filterEventsByCity.feature');
 defineFeature(feature, test => {
 
 });
-
-let test = 4;
