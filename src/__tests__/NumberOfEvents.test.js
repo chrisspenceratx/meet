@@ -1,3 +1,5 @@
+/* eslint-disable testing-library/prefer-screen-queries */
+/* eslint-disable testing-library/no-render-in-setup */
 // src/__tests__/NumberOfEvents.test.js
 
 import { render } from '@testing-library/react';
