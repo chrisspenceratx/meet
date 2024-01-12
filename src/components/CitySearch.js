@@ -20,6 +20,7 @@ const CitySearch = ({ allLocations, setCurrentCity, setInfoAlert }) => {
     setQuery(value);
     setSuggestions(filteredLocations);
 
+   
     let infoText;
     if (filteredLocations.length === 0) {
       infoText =
