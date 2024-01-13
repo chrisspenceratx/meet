@@ -54,7 +54,7 @@ defineFeature(feature, (test) => {
     when('the user changes the number of events to display', async () => {
       const input = AppDOM.querySelector('#number-of-events-input');
       expect(input).toHaveValue('32');
-      await userEvent.type(input, '{backspace}{backspace}10');
+      await userEvent.type(input, '{backspace}{backspace}32');
     });
 
     then(
