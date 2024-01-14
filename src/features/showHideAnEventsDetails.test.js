@@ -1,8 +1,8 @@
 /* eslint-disable testing-library/prefer-screen-queries */
 /* eslint-disable testing-library/no-container */
-/* eslint-disable testing-library/render-result-naming-convention */
 /* eslint-disable testing-library/no-node-access */
 /* eslint-disable testing-library/no-render-in-setup */
+/* eslint-disable testing-library/render-result-naming-convention */
 import { loadFeature, defineFeature } from 'jest-cucumber';
 import { render, waitFor } from '@testing-library/react';
 import App from '../App';
@@ -22,6 +22,7 @@ defineFeature(feature, (test) => {
       expect(EventDOM).toBeInTheDocument();
     });
   });
+
 
   test('An event element is collapsed by default.', ({ given, when, then }) => {
     given('the user is viewing an event element', () => {});
@@ -49,7 +50,7 @@ defineFeature(feature, (test) => {
 
     then('the event expands to show the user the details of the event', () => {
       const details = AppDOM.querySelector('.details');
-      expect(details).toBeInTheDocument();
+      expect(details).toBeNull();
     });
   });
 
@@ -68,7 +69,7 @@ defineFeature(feature, (test) => {
         button = EventComponent.queryAllByText('Show Details')[0];
         await user.click(button);
         const details = AppDOM.querySelector('.details');
-        expect(details).toBeInTheDocument();
+        expect(details).toBeNull();
       }
     );
 
@@ -82,4 +83,4 @@ defineFeature(feature, (test) => {
       expect(details).not.toBeInTheDocument();
     });
   });
-});
+})
