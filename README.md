@@ -1,3 +1,6 @@
+This is an app that displays software development courses made available, all over the world.  You can see information on any given course's title, location, date available, etc.  A pie graph is used to elucidate the categories of all of the courses, showing which are more prominent or less prominent.
+
+
 HOW TO RUN LOCALLY (view on localhost:3000):
 cd meet
 npm run start
