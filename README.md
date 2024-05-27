@@ -1,27 +1,42 @@
-This is an app that displays software development courses made available, all over the world.  You can see information on any given course's title, location, date available, etc.  A pie graph is used to elucidate the categories of all of the courses, showing which are more prominent or less prominent.
+# Meet - Progressive Web App for Online and Offline Event Management
 
+Meet is a Progressive Web App (PWA) designed to manage events seamlessly both online and offline. Users can log in using Google's OAuth, access their Google Calendar events, and interact with a user-friendly interface. The application also includes visual representations of data through graphs and charts. Extensive testing has been implemented using technologies such as Google's Puppeteer, JEST, and Cucumber Gherkin.
 
-HOW TO RUN LOCALLY (view on localhost:3000):
-cd meet
-npm run start
+## Technologies Used
 
-HOW TO DEPLOY TO GH PAGES:
-npm run deploy
+- **React**: A JavaScript library for building user interfaces.
+- **Recharts**: A composable charting library for React.
+- **Google OAuth**: Authentication protocol used for user login.
+- **Puppeteer**: A Node library that provides a high-level API to control headless browsers or full browsers over the DevTools Protocol.
+- **JEST**: A JavaScript testing framework for React applications.
+- **Cucumber Gherkin**: A behavior-driven development (BDD) tool that allows developers to write tests in a natural language style.
 
-LIVE SITE:
-our site is live at https://chrisspenceratx.github.io/meet/
-------------
+## Getting Started
 
-(*BELOW - instructions on terminal after the app is created with CRA)
-  npm start
-    Starts the development server.
+To run Let'sMeet locally, follow these steps:
 
-  npm run build
-    Bundles the app into static files for production.
+1. Clone the repository: `https://github.com/chrisspenceratx/meet.git`
+2. Install dependencies: `npm install`
+3. Start the application: `npm start`
 
-  npm test
-    Starts the test runner.
+## Features
 
-  npm run eject
-    Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can’t go back!
+- **OAuth Login**: Users can securely log in using Google's OAuth for authentication.
+- **Google Calendar Integration**: Access and display events from the user's Google Calendar.
+- **Offline Capability**: The PWA is designed to work seamlessly even when the user is offline.
+- **Graphs and Charts**: Visual representation of data through graphs and charts.
+- **Testing**: Extensive testing using JEST, Puppeteer, and Cucumber Gherkin.
+
+## Scripts
+
+- `npm start`: Start the development server locally from the project folder.
+- `npm build`: Build the application for production.
+- `npm test`: Run tests using JEST.
+- `npm run eject`: Eject from Create React App configuration.
+- `npm run predeploy`: Build script for deployment.
+- `npm run deploy`: Deploy the application to GitHub Pages.
+
+## Deployment
+
+The application is deployed on GitHub Pages at https://chrisspenceratx.github.io/meet/
+
